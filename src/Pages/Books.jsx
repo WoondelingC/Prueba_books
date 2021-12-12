@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { BounceLoader } from 'react-spinners'
 import axios from "axios";
 import Cards from "../Components/Cards";
 
@@ -62,6 +61,8 @@ const Books = () => {
           />
         );
       })}
+
+
       <div className="div_buttons">
         <div>
           <button>
