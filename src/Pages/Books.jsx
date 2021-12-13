@@ -48,10 +48,10 @@ const Books = () => {
 
   return (
     <div className="container">
-      {items.map((book) => {
+      {items.map((book, index) => {
         return (
           <Cards
-            key={book.id}
+            key={index}
             book={book}
             title={book.title}
             image={book.cover}

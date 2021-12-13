@@ -72,17 +72,15 @@ const Form = () => {
             {touched.nombre && errors.nombre && <div className="failed">{errors.nombre}</div>}
           </div>
 
-          <div class="div_inputs">
+          <div className="div_inputs">
             <Select
-              className="form-select"
-              id="validationCustom04"
               name="autor"
               required
               value={values.autor}
               onChange={handleChange}
               onBlur={handleBlur}
             >
-              <option selected disabled value="">
+              <option value="" disabled>
                 Autor
               </option>
               <option value="Miguel de Cervantes">Miguel de Cervantes</option>
